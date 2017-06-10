@@ -7,9 +7,12 @@ security:
 
 zuul:
   routes:
-    client:
-      path: /api-client/**
-      serviceId: CLIENT-SERVICE
+    produto:
+      path: /client-produto/**
+      serviceId: PRODUTO-SERVICE
+    orcamento:
+      path: /client-orcamento/**
+      serviceId: ORCAMENTO-SERVICE
       
 hystrix:
   command:
