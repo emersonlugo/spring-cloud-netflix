@@ -1,0 +1,15 @@
+info:
+  app:
+    name: config-server
+    description: Servidor de configuração
+
+server:
+  port: ${PORT:8888}
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/emersonlugo/spring-cloud-netflix
+          searchPaths: config-repo
