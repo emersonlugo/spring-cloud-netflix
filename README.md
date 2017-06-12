@@ -5,9 +5,11 @@ Este projeto tem por finalidade exemplificar o uso da stack spring-cloud-netflix
 ![alt text](https://image.prntscr.com/image/H5MlX7-3RpOVLNTLAPQA5A.png)
 
 ## Quais projetos serão exemplificados?
-- config-server
 - config-repo
+- config-server
 - eureka
-- ribbon
 - zuul
+- ribbon
 - hystrix
+
+### Config-repo
