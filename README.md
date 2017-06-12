@@ -17,19 +17,19 @@ Repositório responsável por centralizar (e manter externalizado) as configura�
  #### Observação:
  - O nome do arquivo deverá corresponder ao spring.application.name que a aplicação se registrou. Explicarei o motivo mais adiante.
 
-### Config-server
+## Config-server
 ....
 
-### Eureka
+## Eureka
 ....
 
-### Zuul
+## Zuul
 ....
 
-### Ribbon
+## Ribbon
 ....
 
-### Hystrix
+## Hystrix
 ....
 
 ## Referências
