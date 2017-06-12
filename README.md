@@ -13,7 +13,9 @@ Este projeto tem por finalidade exemplificar o uso da stack spring-cloud-netflix
 - hystrix
 
 ### Config-repo
-....
+Repositório responsável por centralizar (e manter externalizado) as configurações dos microservices que compõem a arquitetura apresentada.
+ #### Observação:
+ - O nome do arquivo deverá corresponder ao spring.application.name que a aplicação se registrou. Explicarei o motivo mais adiante.
 
 ### Config-server
 ....
