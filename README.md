@@ -2,7 +2,7 @@
 Este projeto tem por finalidade exemplificar o uso da stack spring-cloud-netflix, incluindo as configurações necessárias e os passos para a execução de forma integrada. 
 
 ## Arquitetura implementada
-![alt text](https://image.prntscr.com/image/H5MlX7-3RpOVLNTLAPQA5A.png)
+![alt text](https://image.prntscr.com/image/JGoHwgLZQmyZRHKfSNwXpA.png)
 
 ## Quais projetos serão exemplificados?
 - config-repo
@@ -13,3 +13,21 @@ Este projeto tem por finalidade exemplificar o uso da stack spring-cloud-netflix
 - hystrix
 
 ### Config-repo
+....
+
+### Config-server
+....
+
+### Eureka
+....
+
+### Zuul
+....
+
+### Ribbon
+....
+
+### Hystrix
+....
+
+## Referências
