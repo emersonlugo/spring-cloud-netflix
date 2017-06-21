@@ -6,4 +6,4 @@ management:
     enabled: false
 
 app:
-  title: Produto Service alterado a ser atualizado via rabbitMQ
+  title: Teste spring cloud bus
