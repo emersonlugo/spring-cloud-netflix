@@ -6,4 +6,4 @@ management:
     enabled: false
 
 app:
-  title: Teste spring cloud bus d
+  title: Teste spring cloud bus +
