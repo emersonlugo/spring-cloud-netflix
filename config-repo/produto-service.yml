@@ -2,4 +2,4 @@ server:
   port: 0
   
 app:
-  title: Produto Service
+  title: Produto Service alterado
