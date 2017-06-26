@@ -1,5 +1,6 @@
 server:
   port: ${PORT:8761}
+  contextPath: /eureka
 
 eureka:
   instance:
