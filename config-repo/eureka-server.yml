@@ -24,6 +24,7 @@ eureka:
     hostname: peer1
     leaseRenewalIntervalInSeconds: 3
   client:
+    registerWithEureka: true
     serviceUrl:
       defaultZone: http://peer2:8763  
   
@@ -39,5 +40,6 @@ eureka:
     hostname: peer2
     leaseRenewalIntervalInSeconds: 3
   client:
+    registerWithEureka: true
     serviceUrl:
       defaultZone: http://localhost:8761
