@@ -8,7 +8,7 @@ eureka:
     registerWithEureka: false
     fetchRegistry: false
     serviceUrl:
-      defaultZone: http://peer1:8762/eureka/
+      defaultZone: http://peer1:8762
   server:
     wait-time-in-ms-when-sync-empty: 0
     
