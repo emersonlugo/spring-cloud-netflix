@@ -1,5 +1,5 @@
 server:
-  port: 8182
+  port: ${PORT:8182}
   
 management:
   security:
