@@ -1,3 +1,7 @@
+spring:
+  application:
+    name: ribbon-client
+
 server:
   port: ${PORT:8182}
   
