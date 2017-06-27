@@ -22,6 +22,7 @@ server:
 eureka:
   instance:
     hostname: peer1
+    leaseRenewalIntervalInSeconds: 3
   client:
     serviceUrl:
       defaultZone: http://peer2:8763  
@@ -36,6 +37,7 @@ server:
 eureka:
   instance:
     hostname: peer2
+    leaseRenewalIntervalInSeconds: 3
   client:
     serviceUrl:
       defaultZone: http://localhost:8761
