@@ -6,6 +6,7 @@ import java.util.List;
 
 import javax.annotation.PostConstruct;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -18,10 +19,13 @@ import br.com.produto.dto.ProdutoDTO;
 
 @RefreshScope
 @RestController
-@RequestMapping(value= "/v1/api/produto", produces = { MediaType.APPLICATION_JSON_UTF8_VALUE })
+@RequestMapping(value= "/v1/api/produtos", produces = { MediaType.APPLICATION_JSON_UTF8_VALUE })
 public class ProdutoController {
  
 	private List<ProdutoDTO> produtos;
+	
+	@Value("${app.title}")
+	private String title;
 	
 	@PostConstruct
 	public void init() {
@@ -35,6 +39,7 @@ public class ProdutoController {
 	
 	@GetMapping
 	public ResponseEntity<List<ProdutoDTO>> findAll() {
+		System.out.println(title);
 		return new ResponseEntity<>(produtos, HttpStatus.OK);
 	}
 }

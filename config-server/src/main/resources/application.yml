@@ -6,6 +6,10 @@ info:
 server:
   port: ${PORT:8888}
 
+management:
+  security:
+    enabled: false
+
 spring:
   cloud:
     config:
@@ -13,3 +17,5 @@ spring:
         git:
           uri: https://github.com/emersonlugo/spring-cloud-netflix
           searchPaths: config-repo
+    bus:
+     enabled: true
