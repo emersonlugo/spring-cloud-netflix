@@ -4,3 +4,10 @@ server:
 management:
   security:
     enabled: false
+
+ribbon-client:
+  ribbon:
+    eureka:
+      enabled: false
+    listOfServers: localhost:8182,localhost:8183,localhost:8184
+    ServerListRefreshInterval: 15000
