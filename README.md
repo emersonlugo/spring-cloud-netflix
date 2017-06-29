@@ -10,6 +10,7 @@ Este projeto tem por finalidade exemplificar o uso da stack spring-cloud-netflix
 - eureka
 - zuul
 - ribbon
+- feign
 - hystrix
 
 ## Config-repo
