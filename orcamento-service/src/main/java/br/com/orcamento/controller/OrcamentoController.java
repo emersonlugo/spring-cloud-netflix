@@ -9,19 +9,20 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.client.RestTemplate;
+
+import br.com.orcamento.clients.ProdutoClient;
 
 @RestController
 @RequestMapping(value= "/v1/api/orcamentos", produces = { MediaType.APPLICATION_JSON_UTF8_VALUE })
 public class OrcamentoController {
 
 	@Autowired
-	private RestTemplate restTemplate;
+	private ProdutoClient produtoClient;
 	
 	@GetMapping
 	public List<String> getAll() {
-		ResponseEntity<String> teste = restTemplate.getForEntity("http://produto-service/v1/api/produtos", String.class);
-		System.out.println(teste.getBody());
+		ResponseEntity<String> produtos = produtoClient.getProdutos();
+		System.out.println(produtos.getBody());
 		return Arrays.asList("Orçamento 1", "Orçamento 2");
 	}
 }
