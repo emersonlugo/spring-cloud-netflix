@@ -5,5 +5,9 @@ management:
   security:
     enabled: false
 
+feign:
+  hystrix:
+    enabled: true
+
 app:
   title: Teste spring cloud bus +
