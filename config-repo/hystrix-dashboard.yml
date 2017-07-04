@@ -4,3 +4,7 @@ server:
 management:
   security:
     enabled: false
+    
+turbine:
+  appConfig: orcamento-service, produto-service
+  clusterNameExpression: "'default'"
